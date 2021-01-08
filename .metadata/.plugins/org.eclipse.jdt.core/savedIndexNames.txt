@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+/Applications/Eclipse_2020-06.app/EclipseJavaSilver/.metadata/.plugins/org.eclipse.jdt.core
