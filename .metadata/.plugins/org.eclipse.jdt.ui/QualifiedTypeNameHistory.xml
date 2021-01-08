@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sample.lib.Test"/>
+    <fullyQualifiedTypeName name="com.sample.lib2.Hello"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthStyleFactory"/>
+    <fullyQualifiedTypeName name="com.sample.abc.B"/>
+    <fullyQualifiedTypeName name="override.B"/>
+</qualifiedTypeNameHistroy>
