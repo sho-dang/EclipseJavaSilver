@@ -5,4 +5,6 @@
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthStyleFactory"/>
     <fullyQualifiedTypeName name="com.sample.abc.B"/>
     <fullyQualifiedTypeName name="override.B"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ValueRange"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
