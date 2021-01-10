@@ -5,6 +5,11 @@
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthStyleFactory"/>
     <fullyQualifiedTypeName name="com.sample.abc.B"/>
     <fullyQualifiedTypeName name="override.B"/>
-    <fullyQualifiedTypeName name="java.time.temporal.ValueRange"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ValueRange"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.compile.B"/>
+    <fullyQualifiedTypeName name="com.compile.C"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.HelloWorld"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

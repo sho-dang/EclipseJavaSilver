@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
-		ifWhile1();
+		String9();
 
 
 	}
@@ -99,7 +99,17 @@ public class Main {
 		//var d = {1,2,3};  // 配列初期化では型推論ができない
 		var e = new ArrayList<>(); //ダイヤモンド演算子で指定された型を参照する。<>の場合は自動的にObject型が指定されているためOK
 	}
-	public static void name() {
+	public static void String9() {
+		//Stringオブジェクトとして正しいものはどれ
+		/**
+		 * Stringのルール
+		 * ・「""」ダブルクオーテーションで括る
+		 * ・newを使ってインスタンス化する
+		 */
 
+		String a = new String("sample");
+		String b = "sample";
+		//String c = String.newInstance("sample"); //newInstanceメソッドは存在しない
+		//String d = String.valueOf('sample'); //valueOfメソッドの値がシングルクオーテーション(char指定のもの)になっているため
 	}
 }
