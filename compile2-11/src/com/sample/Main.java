@@ -41,5 +41,56 @@ public class Main {
 		 */
 		String strr = "aaaa";
 		System.out.println(strr.replace("aa", "b"));
+
+
+	/**
+	 * 2-15
+	 */
+		//コンパイルした時に正しいものはどれ
+		/**
+		 * lengthは文字数を返すメソッド
+		 * abcdeの場合、戻り値は5である。
+		 * ただし、charAtで選択する場合は「abcde」= 「01234」のため５は存在しない。
+		 * そのため、コンパイルエラーとなる
+		 */
+		//System.out.println(str.charAt(str.length()));
+
+	/**
+	 * 2-16
+	 */
+		//コンパイルした時に正しいものはどれ
+		/*
+		 * startWith()はboolean型
+		 * この場合、「b」が開始しているかどうかということなのでtrueが返される
+		 */
+		System.out.println(str.substring(1,3).startsWith("b"));
+
+	/**
+	 * 2-17
+	 */
+		//実行した時に、Hello,Java!が表示されるのはどれ
+		/**
+		 * concatはStringで用意されているメソッド
+		 * インスタンス（Hello,）が保持する文字列を、引数として渡された文字列を連結する
+		 */
+		String strA = "Hello, ".concat("Java!");
+		//String strB = "Hello, ".append("Java!"); //StringBuilderクラスのメソッド
+		//String strC = "Hello, ".add("Java!");  //Stringクラスに存在しない
+		//String strD = "Hello, ".plus("Java!");  //Stringクラスに存在しない
+
+		System.out.println(strA);
+
+	/**
+	 * 2-18
+	 */
+		//コンパイル結果がどうなるか
+		/**
+		 * +演算子で数値加算と文字列結合がある場合は、左から順に計算される
+		 * 10 + 20 + "30" + 40
+		 * 30 + "30" + 40
+		 * "3030" + 40
+		 * "303040"となる
+		 */
+		System.out.println(10 + 20 + "30" + 40);
 	}
 }
