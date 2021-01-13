@@ -92,5 +92,49 @@ public class Main {
 		 * "303040"となる
 		 */
 		System.out.println(10 + 20 + "30" + 40);
+	/**
+	 * 2-19
+	 */
+		//実行結果として正しいもの
+		/*
+		 * +演算子はnullであっても文字列として連結できる
+		 */
+		String strn = null;
+		strn += "null";
+		System.out.println(strn);
+	/**
+	 * 2-20
+	 */
+		//実行結果として正しいもの
+		/*
+		 * StringBuilderはデフォルトで16文字分のバッファを持っている
+		 * capacityは文字列の長さを返す
+		 * ただし、capacityの長さ＋デフォルトの16文字を足した結果を返される
+		 */
+		StringBuilder sb = new StringBuilder("abcde");
+		//String Sbb = "abcd";
+		System.out.println(sb.capacity());
+	/**
+	 * 2-21
+	 */
+		//実行結果として正しいもの
+		/*
+		 * StringBuilderクラス appendは文字列に文字列を追加するメソッド
+		 * reverseメソッドは文字列を反転するメソッド
+		 * replaceメソッドは文字の入れ替え「０１２３４」のうち、1〜3文字目を「a」に入れ替える
+		 */
+		StringBuilder sbb = new StringBuilder();
+		sbb.append("abcde");
+		sbb.reverse();
+		sbb.replace(1, 3,"a");
+		System.out.println(sbb);
+	/**
+	 * 2-22
+	 */
+		//実行結果として正しいもの
+		/*
+		 * indexOf()は引数で指定した文字の開始位置を返す
+		 */
+		System.out.println(sb.indexOf("bcd"));
 	}
 }
