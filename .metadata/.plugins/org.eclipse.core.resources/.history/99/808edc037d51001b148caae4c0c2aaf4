@@ -1,7 +1,0 @@
-package com.sample;
-
-import com.sample.lib.Test;
-
-public class Sample {
-	Test test = new Test();
-}

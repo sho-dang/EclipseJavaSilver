@@ -252,8 +252,8 @@ public class Main {
 				 */
 				int num21 = 1 ;
 				switch (num21) {
-				case 1 : ;
-				case 2 : ;
+				case 1 :
+				case 2 :
 				case 3 : System.out.println("A");
 				case 4 : System.out.println("B");
 				default:
