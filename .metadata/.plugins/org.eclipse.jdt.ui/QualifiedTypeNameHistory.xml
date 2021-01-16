@@ -11,13 +11,14 @@
     <fullyQualifiedTypeName name="com.compile.B"/>
     <fullyQualifiedTypeName name="com.compile.C"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.HelloWorld"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="jdk.jfr.internal.PrivateAccess"/>
     <fullyQualifiedTypeName name="com.sample.Sample"/>
     <fullyQualifiedTypeName name="com.sample.Enum"/>
     <fullyQualifiedTypeName name="com.sample.Enum.name"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="sun.security.provider.JavaKeyStore.CaseExactJKS"/>
     <fullyQualifiedTypeName name="Sample"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 </qualifiedTypeNameHistroy>
