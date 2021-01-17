@@ -1,4 +1,3 @@
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -81,23 +80,53 @@ public class Main {
 		//4-5
 		System.out.println(title.replace("a","4-5"));
 			/*
-			 *
+			 * for文の条件式の中で定義した「total」はローカル変数となるため、
+			 * for文の中でしか変数を使用できない.
+			 * すなわち、「total」は出力できず、コンパイルエラーとなる。
 			 */
+			int a5 = 1;
+
+			for(int b = 2,total = 0;b <= 5 ;b++) {
+				total = a5 * b;
+			}
+			//System.out.println(total);
+
 		//4-6
 		System.out.println(title.replace("a","4-6"));
 			/*
-			 *
+			 * 0を表示するために、条件文に当てはまるものはどれ
+			 *  A: i < 0    初めから0より大きくないため、処理が実行されない
+			 *  B: i == 0   正解。iは0であるためtrueを返す。繰り返されると１になる為、表示は0のみとなる。
+			 *  C: 0 < i    初めからiは、0より大きくないため、処理が実行されない
+			 *  D: 1 < 2   iの更新がされないので、無限ループとなってしまう。
 			 */
+			for(int i = 0;i==0;i++) {
+				System.out.println(i);
+			}
+
 		//4-7
 		System.out.println(title.replace("a","4-7"));
 			/*
-			 *
+			 *  for文の条件文が複数定義しているので、コンパイルエラーとなる。
+			 *  複数定義できるのは初期化と更新文である。
+			 *  条件文として&&（かつ）や||（または）の記述がある場合は、結果的に返すのが真偽値のどちらかになる為、OK
 			 */
+		/*
+		for(int i = 0 ,j = 0 ;i < 3,j<3 ; i++) {
+			System.out.println(i++);
+			j += i;
+		}
+		*/
 		//4-8
 		System.out.println(title.replace("a","4-8"));
 			/*
 			 *
 			 */
+		for(int i = 0 ;i < 3; i++, period()) {
+			System.out.print(i);
+		}
+		System.out.println();
+
 		//4-9
 		System.out.println(title.replace("a","4-9"));
 			/*
@@ -141,5 +170,8 @@ public class Main {
 		//4-17
 		System.out.println(title.replace("a","4-17"));
 
+	}
+	public static void period() {
+		System.out.print(",");
 	}
 }
