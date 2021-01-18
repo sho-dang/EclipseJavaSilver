@@ -120,7 +120,9 @@ public class Main {
 		//4-8
 		System.out.println(title.replace("a","4-8"));
 			/*
-			 *
+			 * 更新文は複数定義可能
+			 * ルールとして更新文は、繰り返し処理の後に実行されるということを忘れずに。
+			 * 0,1,2,が正解
 			 */
 		for(int i = 0 ;i < 3; i++, period()) {
 			System.out.print(i);
@@ -130,18 +132,48 @@ public class Main {
 		//4-9
 		System.out.println(title.replace("a","4-9"));
 			/*
+			 * 10を表示したい
 			 *
 			 */
+		int array[][] = new int[][]{{1,2},{2,3,4}};
+		int total = 0;
+		for(int i = 0 ; i < array.length ;i++ ) { //0,1
+			for(int j = i; j < array[i].length ; j++) {//lengthは0
+				total +=array[i][j];
+			}
+
+
+		}
+			System.out.println(total);
+
 		//4-10
 		System.out.println(title.replace("a","4-10"));
 			/*
-			 *
+			 *  無限ループになるものはどれ
+			 *A : int i = 0 ;true;i++  //条件文がずっとtrueのため
+			 *B : int i = 0 ;false;i++  //ここはfalseでは処理を終了するのでループしない
+			 *C : int i = 0 ;;i++	//条件文が省略できるが、繰り返されるのみ
+			 *D : int i = 0 ;i<5;   //更新文も省略できるが、値が変動しないので繰り返される
 			 */
+		/*
+		for(int i = 0 ;;i++) {
+			System.out.println();
+		}
+		*/
 		//4-11
 		System.out.println(title.replace("a","4-11"));
 			/*
+			 *拡張for文ルール
+			 *for(型  変数 :  集合)
+			 *集合の型と、一時変数の型の互換性があることが大事。
+			 *集合の型がStringであっても、Object型は互換性があるので使える。(Stringクラス自体がObject型)
+			 *
 			 *
 			 */
+		String[][] arrays = {{"A","B","C"}};
+		for(Object obj : arrays) {
+			System.out.println(obj);
+		}
 		//4-12
 		System.out.println(title.replace("a","4-12"));
 			/*
