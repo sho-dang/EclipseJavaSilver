@@ -39,6 +39,9 @@ public class Main {
 		//5-4
 		System.out.println(title.replace("a","5-4"));
 				/*
+				 * aは左辺で1次元配列として定義しているが、右辺では２次元配列のインスタンスを作成しようとしているためNG
+				 * bはintの配列型を定義しているのに、右辺でdouble型の定義をしているのでNG
+				 * fは２次元配列なのは一致しているが、左大括弧にて１次元目のインスタンスを作成していないのに、要素のみを入れることはできない
 				 *
 				 */
 				//int a4[] = new int[2][3];
@@ -48,14 +51,30 @@ public class Main {
 				int[] d4 = new int[x * y];
 				int[][] e4 = new int[2][];
 				//int f4[][] = new int[][3];
-
-
-
-
 		//5-5
 		System.out.println(title.replace("a","5-5"));
+				/*
+				 * オブジェクト型配列を生成した時は、初期化としてnullが入る
+				 *
+				 */
+				Item[] items = new Item[3];
+				int total5 = 0;
+				/*
+				for(int i = 0 ; i < items.length;i++) {
+					total5 += items[i].price;
+				}
+				*/
+				System.out.println(total5);
 		//5-6
 		System.out.println(title.replace("a","5-6"));
+				/*
+				 *
+				 */
+				String[] array6 = {"A","B","C","D"};
+				array6[0] = null;
+				for(String str : array6)
+				System.out.print(str);
+				System.out.println();
 		//5-7
 		System.out.println(title.replace("a","5-7"));
 		//5-8
@@ -67,6 +86,7 @@ public class Main {
 
 	}
 }
+
 /*
  * //5-1
 		System.out.println(title.replace("a","5-1"));
