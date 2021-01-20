@@ -22,4 +22,6 @@
     <fullyQualifiedTypeName name="java.time.Period"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="sun.security.util.math.IntegerFieldModuloP"/>
 </qualifiedTypeNameHistroy>
