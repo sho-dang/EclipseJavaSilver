@@ -155,11 +155,11 @@ public class Main {
 			 *C : int i = 0 ;;i++	//条件文が省略できるが、繰り返されるのみ
 			 *D : int i = 0 ;i<5;   //更新文も省略できるが、値が変動しないので繰り返される
 			 */
-		/*
-		for(int i = 0 ;;i++) {
-			System.out.println();
-		}
-		*/
+			/*
+			for(int i = 0 ;;i++) {
+				System.out.println();
+			}
+			*/
 		//4-11
 		System.out.println(title.replace("a","4-11"));
 			/*
@@ -170,38 +170,136 @@ public class Main {
 			 *
 			 *
 			 */
-		String[][] arrays = {{"A","B","C"}};
-		for(Object obj : arrays) {
-			System.out.println(obj);
-		}
+			String[][] arrays = {{"A","B","C"}};
+			for(Object obj : arrays) {
+				System.out.println(obj);
+			}
 		//4-12
 		System.out.println(title.replace("a","4-12"));
 			/*
+			 * １次元配列では、まだメモリ番地は生成されない。
+			 * なので、拡張for文で、String配列の中のString型を出力できる。
+			 * ２次元配列では、メモリ番地が与えられる。
+			 * その中にString配列が入っているので、出力してもメモリの番地が表示される。
 			 *
 			 */
+			String[] array12 = {"A","B","C"};
+			for(String str : array12) {
+				str = "D";
+			}
+			for(String str : array12) {
+				System.out.print(str);
+			}
+			System.out.println();
+
 		//4-13
 		System.out.println(title.replace("a","4-13"));
 			/*
-			 *
+			 * 元となるコードと同じ結果を出力するものはどれ
+			 *  前置インクリメントは初めから、変数に１をプラスする
+			 *  後置インクリメントは、その時の変数の代入時は値は変化していない。
+			 *  ただし、定義した変数には１はプラスされている。
+			 *  結果的にどれも一致しない「E」が正解である
 			 */
+			int num13 = 10;
+			do {
+				num13++;
+			}while(++num13 <10);
+				System.out.print(num13);
+				System.out.println(" 元のコード");
+
+			num13 = 10;
+			while(++num13 < 10) {
+				num13++;
+			}
+				System.out.println(num13);
+			num13 = 10;
+			while(++num13 <= 10) {
+				num13++;
+			}
+				System.out.println(num13);
+			num13 = 10;
+			while(num13++ < 10) {
+				num13++;
+			}
+				System.out.println(num13);
+			num13 = 10;
+			while(num13++ <= 10) {
+				num13++;
+			}
+				System.out.println(num13);
+
 		//4-14
 		System.out.println(title.replace("a","4-14"));
 			/*
-			 *
+			 *ifは{}無しのためbreakのみ適用
+			 *初めのfor文で繰り返し回数を決める（2回）
+			 *中にfor文があるので
 			 */
+			String[] array14 = {"A","B"};
+			for(String a : array14) {
+				for(String b : array14) {
+					if("B".equals(b))
+						break;
+						System.out.print(b);
+				}
+			}System.out.println();
+
 		//4-15
 		System.out.println(title.replace("a","4-15"));
 			/*
+			 * 1,2,3,4,5それぞれのパターンのときのifを実行する
+			 * 1 =  割り切れないため +1
+			 * 2 =  スルー
+			 * 3 = あまり1となるため、+3
+			 * 4 =  スルー
+			 * 5 =  あまり1のため、+5
 			 *
+			 * total=9
 			 */
+			int[] array15 = {1,2,3,4,5};
+			int total15 = 0;
+			for(int i :array15) {
+				if(i % 2 == 0) //1+
+					continue;
+					total15 += i ;
+			}
+			System.out.println();
+
 		//4-16
 		System.out.println(title.replace("a","4-16"));
 			/*
-			 *
+			 *ラベルはさまざまなところへ付けられる
 			 */
+			//コードブロック
+				a: {
+				System.out.println("a");
+				if(true)
+				break a;
+				System.out.println("i");
+				}
+			//ループ文
+				b: for(int i = 0 ; i< 5 ; i++){
+					System.out.println(i);
+				}
+
+				c: if(true) {
+					System.out.println("あ");
+				}
 		//4-17
 		System.out.println(title.replace("a","4-17"));
+			/*
+			 *
+			 */
+			int total17 = 0 ;
+			a: for(int i = 0;i < 5 ; i++ ) {
 
+				b: for(int j = 0 ; j < 5 ; j++) {
+						if(i % 2 == 0) continue a;
+						if(3<j) break b;
+						total += j;
+					}
+			}
 	}
 	public static void period() {
 		System.out.print(",");
