@@ -68,7 +68,8 @@ public class Main {
 		//5-6
 		System.out.println(title.replace("a","5-6"));
 				/*
-				 *
+				 *  配列にnullを代入しても、要素の数は変わらない
+				 *  出力の時、nullはリテラルのため表示はできる
 				 */
 				String[] array6 = {"A","B","C","D"};
 				array6[0] = null;
@@ -77,6 +78,16 @@ public class Main {
 				System.out.println();
 		//5-7
 		System.out.println(title.replace("a","5-7"));
+				/*
+				 * 
+				 */
+				//int[] a7 =new int[2]{2,3};
+				int b7[][] = {};
+				int[][] c7 = new int[][] {};
+				int[] d;
+				d = new int[]{2,3};
+				//int e[];
+				//e = {2,3};
 		//5-8
 		System.out.println(title.replace("a","5-8"));
 		//5-9
