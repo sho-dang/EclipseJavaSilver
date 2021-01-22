@@ -24,7 +24,7 @@
     <fullyQualifiedTypeName name="Item"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="apple.laf.JRSUIState.TitleBarHeightState"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="javax.naming.event.ObjectChangeListener"/>
     <fullyQualifiedTypeName name="Sample"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
 </qualifiedTypeNameHistroy>

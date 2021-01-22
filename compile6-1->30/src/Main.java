@@ -11,6 +11,15 @@ public class Main {
 				System.out.println(title.replace("a","6-2"));
 				//6-3
 				System.out.println(title.replace("a","6-3"));
+						/*
+						 *  NULLと出力できるのはどれ
+						 *  どれも不正解
+						 */
+						Object obj1 = null;
+						Object obj2 = false;
+						//Object obj3 = NULL;
+						Object obj4 = "";
+						System.out.println(obj4);
 				//6-4
 				System.out.println(title.replace("a","6-4"));
 						/*
@@ -26,6 +35,20 @@ public class Main {
 				System.out.println(title.replace("a","6-5"));
 				//6-6
 				System.out.println(title.replace("a","6-6"));
+						/*
+						* staticルール
+						staticのメンバ（フィールド、メソッド）はstatic領域と呼ばれるところに保管される。
+						static同士であれば変数とメソッドは自由に使える。
+
+						staticではないメソッドが取り出す時は、
+						「クラス名.フィールド名」
+						もしくは、インスタンスを作成する
+						staticではないメソッドから呼び出す時は、上記の方法でstaticフィールドを呼び出すことができる。
+
+						staticなメソッドはstaticなフィールドやメソッドしか呼び出せない
+						staticなメソッドはstaticではないフィールドやメソッドに干渉できない
+						（なぜなら、存在しないものを呼び出すことになるから）
+						 */
 				//6-7
 				System.out.println(title.replace("a","6-7"));
 				//6-8
