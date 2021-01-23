@@ -84,6 +84,34 @@ public class Main {
 						 */
 						Sample s = new Sample();
 
+				//6-29
+				System.out.println(title.replace("a","6-29"));
+						/*
+						 *  メソッドの引数には値のコピーを渡す。
+						 *  そのため、インスタンスの元の値が変化するわけではない。
+						 *  メソッドの変更した結果を使用したい場合はreturnで取得する。
+						 */
+						Sample29 s29 = new Sample29(10);
+						modify29(s29.num);
+						System.out.println(s29.num);
+
+
+				//6-30
+				System.out.println(title.replace("a","6-30"));
+						/*
+						 *  メソッドの引数にオブジェクト型を渡した場合は、参照値を渡している。
+						 *  そのため、インスタンスの値をメソッドで変更すると、参照しているフィールドの値を変更しているので、
+						 *  値の更新がされる。
+						 */
+						Sample29 s30 = new Sample29(10);
+						modify30(s30);
+						System.out.println(s30.num);
+	}
+	private static void modify29(int num) {
+		num *= 2;
+	}
+	private static void modify30(Sample29 s) {
+		s.num *= 2;
 	}
 
 }
