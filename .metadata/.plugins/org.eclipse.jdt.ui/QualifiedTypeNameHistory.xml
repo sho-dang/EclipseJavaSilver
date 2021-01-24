@@ -32,6 +32,10 @@
     <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
     <fullyQualifiedTypeName name="InterfaceA"/>
     <fullyQualifiedTypeName name="InterfaceC"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="com.sun.tools.sjavac.comp.dependencies.PublicApiCollector"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="Integer"/>
+    <fullyQualifiedTypeName name="Number"/>
+    <fullyQualifiedTypeName name="java.lang.Number"/>
 </qualifiedTypeNameHistroy>
