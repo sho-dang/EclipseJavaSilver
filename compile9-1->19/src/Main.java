@@ -1,0 +1,31 @@
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Sample[] samples = { new Sample(2,"B"),
+							new Sample(3, "C"),
+							new Sample(1, "A")};
+
+	List<Sample> list = new ArrayList<Sample>(Arrays.asList(samples));
+	list.sort(new SampleComparator());
+	for(Sample str : list) {
+		System.out.println(str.getName());
+	}
+	List<Integer> list2 = Arrays.asList(new Integer[] {3,2,1});
+	list2.sort((a,b) -> -a.compareTo(b));
+	for(Integer num : list2) {
+		System.out.println(num);
+	}
+
+	LocalDate a = LocalDate.of(2019,8,19);
+	LocalDate b = LocalDate.of(2019,8,20);
+	b.with(DayOfWeek.MONDAY);
+	System.out.println(a.equals(b)+","+a.isBefore(b));
+	System.out.println();
+	}
+}
