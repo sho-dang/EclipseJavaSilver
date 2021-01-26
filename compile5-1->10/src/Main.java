@@ -55,15 +55,17 @@ public class Main {
 		System.out.println(title.replace("a","5-5"));
 				/*
 				 * オブジェクト型配列を生成した時は、初期化としてnullが入る
-				 *
+				 *	インスタンス化した場合はnullが追加されているので、要素を追加しないといけない。
+				 *  forの処理文で呼び出そうとしてもヌルポになるため、例外が発生する
 				 */
 				Item[] items = new Item[3];
+				//int[] itemss = new int[3];
 				int total5 = 0;
-				/*
+
 				for(int i = 0 ; i < items.length;i++) {
 					total5 += items[i].price;
 				}
-				*/
+
 				System.out.println(total5);
 		//5-6
 		System.out.println(title.replace("a","5-6"));
@@ -79,7 +81,7 @@ public class Main {
 		//5-7
 		System.out.println(title.replace("a","5-7"));
 				/*
-				 * 
+				 *
 				 */
 				//int[] a7 =new int[2]{2,3};
 				int b7[][] = {};

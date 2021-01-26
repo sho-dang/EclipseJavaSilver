@@ -24,6 +24,18 @@ public class Main {
 		System.out.println(title.replace("a","8-3"));
 		//8-4
 		System.out.println(title.replace("a","8-4"));
+				/*
+				 * 
+				 */
+				int cnt = 0;
+				/*
+				Runnable r = () -> {
+					for(cnt =0;cnt < 10;cnt++) {
+						System.out.println(cnt++);	
+					}
+				};
+				*/
+				//new Thread(r).start();
 		//8-5
 		System.out.println(title.replace("a","8-5"));
 		//8-6
