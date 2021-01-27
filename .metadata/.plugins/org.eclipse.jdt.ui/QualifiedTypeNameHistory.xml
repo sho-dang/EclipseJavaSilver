@@ -44,14 +44,16 @@
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="Sample"/>
-    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="SampleComparator"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.DayOfWeek"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="compile12.A"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.function.Supplier"/>
 </qualifiedTypeNameHistroy>
