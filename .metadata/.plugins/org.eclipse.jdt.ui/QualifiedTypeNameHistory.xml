@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sample.lib.Test"/>
-    <fullyQualifiedTypeName name="com.sample.lib2.Hello"/>
-    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthStyleFactory"/>
-    <fullyQualifiedTypeName name="com.sample.abc.B"/>
-    <fullyQualifiedTypeName name="override.B"/>
-    <fullyQualifiedTypeName name="java.time.temporal.ValueRange"/>
-    <fullyQualifiedTypeName name="com.compile.B"/>
-    <fullyQualifiedTypeName name="com.compile.C"/>
     <fullyQualifiedTypeName name="sun.jvm.hotspot.HelloWorld"/>
     <fullyQualifiedTypeName name="jdk.jfr.internal.PrivateAccess"/>
     <fullyQualifiedTypeName name="com.sample.Sample"/>
@@ -30,7 +22,6 @@
     <fullyQualifiedTypeName name="InterfaceA"/>
     <fullyQualifiedTypeName name="InterfaceC"/>
     <fullyQualifiedTypeName name="com.sun.tools.sjavac.comp.dependencies.PublicApiCollector"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="Integer"/>
     <fullyQualifiedTypeName name="java.lang.Number"/>
     <fullyQualifiedTypeName name="Number"/>
@@ -56,4 +47,17 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.function.Supplier"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
+    <fullyQualifiedTypeName name="compile10.Sample"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="com.sun.javadoc.ThrowsTag"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="compile10.A"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="compile10.TestException"/>
+    <fullyQualifiedTypeName name="compile10.SampleException"/>
 </qualifiedTypeNameHistroy>
