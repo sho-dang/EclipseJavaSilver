@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sun.jvm.hotspot.HelloWorld"/>
-    <fullyQualifiedTypeName name="jdk.jfr.internal.PrivateAccess"/>
-    <fullyQualifiedTypeName name="com.sample.Sample"/>
-    <fullyQualifiedTypeName name="com.sample.Enum"/>
     <fullyQualifiedTypeName name="com.sample.Enum.name"/>
     <fullyQualifiedTypeName name="sun.security.provider.JavaKeyStore.CaseExactJKS"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
@@ -30,14 +26,12 @@
     <fullyQualifiedTypeName name="B2"/>
     <fullyQualifiedTypeName name="Algorithm"/>
     <fullyQualifiedTypeName name="Service"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="Sample"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="SampleComparator"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.DayOfWeek"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
@@ -46,8 +40,6 @@
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.function.Supplier"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="compile10.TestException"/>
     <fullyQualifiedTypeName name="compile10.SampleException"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.util.function.UnaryOperator"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.function.Consumer"/>
+    <fullyQualifiedTypeName name="java.util.function.Supplier"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.util.function.Predicate"/>
 </qualifiedTypeNameHistroy>
