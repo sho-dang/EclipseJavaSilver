@@ -1,0 +1,2 @@
+module compile13 {
+}
