@@ -79,8 +79,15 @@ public class Main {
 		//3-11
 		System.out.println(title.replace("a","3-11"));
 				/*
-				 *
+				 * Objectはnullで初期化できる。
+				 * 初期化はしているので、呼び出しの時にヌルポにならない。
+				 * 代入がない場合に、ヌルポとなる。
+				 * 配列オブジェクトでも同じ。
+				 * newで初期化した場合は、nullで初期化されているので要素を呼び出せる。
 				 */
+				Object[] zz =new Object[3];
+				System.out.println(zz[0]);
+
 				Object a11 = new Object();
 				Object b11 = null;
 				System.out.println(a11.equals(b11));
@@ -109,7 +116,9 @@ public class Main {
 		//3-14
 		System.out.println(title.replace("a","3-14"));
 				/*
-				 *
+				 * internメソッドはコンスタントプール(参照先)の値を取得するため
+				 * メモリ番地の違うインスタンスの文字列を比較する際、
+				 * internを使えば文字列同士を比較できるのでtrueを返す。
 				 */
 				String a14 = "abc";
 				String b14 = new String(a14);
