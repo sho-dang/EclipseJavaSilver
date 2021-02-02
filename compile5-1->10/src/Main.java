@@ -58,6 +58,7 @@ public class Main {
 				 *	インスタンス化した場合はnullが追加されているので、要素を追加しないといけない。
 				 *  forの処理文で呼び出そうとしてもヌルポになるため、例外が発生する
 				 */
+				/*
 				Item[] items = new Item[3];
 				//int[] itemss = new int[3];
 				int total5 = 0;
@@ -66,7 +67,10 @@ public class Main {
 					total5 += items[i].price;
 				}
 
+
 				System.out.println(total5);
+				*/
+
 		//5-6
 		System.out.println(title.replace("a","5-6"));
 				/*
@@ -92,10 +96,39 @@ public class Main {
 				//e = {2,3};
 		//5-8
 		System.out.println(title.replace("a","5-8"));
+				/*
+				 * 多次元配列は非対称な配列を保持できる。
+				 * 配列のlengthは要素数を呼び出す。
+				 * lengthでnullのメモリ番地の要素が取得できずヌルポとなる
+				 */
+				/*
+
+				String[][] array = {{"A","B"},null,{"C","D","E"}};
+				int total = 0;
+				for(String[] tmp : array) {
+					total +=tmp.length;
+				}
+				System.out.println(total);
+				*/
 		//5-9
 		System.out.println(title.replace("a","5-9"));
 		//5-10
 		System.out.println(title.replace("a","5-10"));
+				/*
+				 * cloneメソッドは中の参照している値をコピーする
+				 * メモリ番地は違うが中身の要素は同じとなる
+				 *
+				 */
+		int[][] arrayA = {{1,2},{1,2},{1,2,3} };
+		int[][] arrayB = arrayA.clone() ;
+		int totalC = 0;
+		for(int[] tmp:arrayB) {
+			for(int val :tmp) {
+				totalC += val;
+			}
+		}
+		System.out.println(totalC);
+
 
 	}
 }
