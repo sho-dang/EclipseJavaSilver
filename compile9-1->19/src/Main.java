@@ -7,6 +7,8 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
+		String title = "------   a   ------";
+
 		Sample[] samples = { new Sample(2,"B"),
 							new Sample(3, "C"),
 							new Sample(1, "A")};
@@ -27,5 +29,25 @@ public class Main {
 	b.with(DayOfWeek.MONDAY);
 	System.out.println(a.equals(b)+","+a.isBefore(b));
 	System.out.println();
+
+	System.out.println(title.replace("a","9-17"));
+			/* Arrays asListではリストの変更は本来できないが、
+			 * mutableなオブジェクトであるArrayListの引数へ入れることで、変更することができる。
+			 *
+			 *
+			 */
+			List<String> listA = new ArrayList<>(Arrays.asList(new String[]{"A","B","C","D"}));
+			listA.removeIf(
+					(String str) -> str.equals("B")
+					);
+			listA.forEach(System.out::println);
+
+			//ArraysでのimmutableなコレクションではremoveIfをしようとすると例外が発生する
+			List<String> listB = Arrays.asList(new String[]{"A","B","C","D"});
+			listB.removeIf(
+					(String str) -> str.equals("B")
+					);
+			listB.forEach(System.out::println);
 	}
+
 }

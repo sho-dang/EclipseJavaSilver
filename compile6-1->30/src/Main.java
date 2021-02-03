@@ -1,5 +1,3 @@
-
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -73,6 +71,10 @@ public class Main {
 				System.out.println(title.replace("a","6-17"));
 				//6-18
 				System.out.println(title.replace("a","6-18"));
+						/*
+						 *
+						 */
+
 				//6-19
 				System.out.println(title.replace("a","6-19"));
 				//6-20
@@ -115,3 +117,30 @@ public class Main {
 	}
 
 }
+
+class Sub{
+	void method() {
+		System.out.println("A");
+	}
+}
+class Impl extends Sub{
+
+	/*6-18
+	 * オーバーライドの定義としてはシグニチャが一致していることが条件のため
+	 * アクセス修飾子がついていることは関係ない
+	 */
+	/*
+	public void method() {
+	}
+	/*
+	private void method() {
+	}
+	*/
+	/**/
+	protected void method() {
+
+	}
+
+}
+
+
