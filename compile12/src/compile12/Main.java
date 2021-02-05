@@ -6,11 +6,44 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class Main {
+	static int num = 23;
+	static String str;
 	public static void main(String[] args) {
 		String title = "------   a   ------";
 
-		System.out.println(title.replace("a","12-4"));
+		System.out.println(title.replace("a","12-5"));
+				/*
+				 *  クラスフィールド変数はローカル変数共に同じ変数を定義することは可能
+				 *	通常メソッドにおいて、クラスフィールドを呼び出す時は、「クラス名.変数名」で呼び出す
+				 *	クラスメソッドにおけるクラスフィールドの呼び出しは、変数名のみで良い。
+				 *	一方、インスタンス変数を呼び出す場合は「this.変数名」を使用する
+				 */
+				int num = Main.num;
+				System.out.println(num);
 
+		System.out.println(title.replace("a","12-13"));
+				/*  Stringはオブジェクト型のため、デフォルトの値はnull
+				 *  初期化せずに呼び出せばヌルポとなってしまう
+				 *
+				 */
+			/*
+
+				switch(str) {
+				case "10" :str +="10";
+				default : str += "def";
+				case "20" :str +="20";
+				}
+			*/
+		System.out.println(title.replace("a","12-17"));
+				/*
+				 * インナークラスとはクラスの中に別なクラスを作成することである
+				 * アクセス修飾子は全て付けることができる
+				 * インナークラスを使う時は、下記のように
+				 * 親クラスとなるインスタンスを作成したのち、
+				 * 「親クラス.new インナークラス名」でインスタンスを作成する
+				 */
+				Main main = new Main();
+				Inner inner = main.new Inner();
 
 		System.out.println(title.replace("a","12-31"));
 				var alpabet = new ArrayList<>(Arrays.asList(new String[] {"A","B","C","D","E"}));
@@ -52,5 +85,10 @@ public class Main {
 		Supplier<Integer> foo = () -> i;
 		//i++;
 		System.out.println(foo.get());
+	}
+	class Inner{
+		Inner(){
+			System.out.println("これはインナークラスです");
+		}
 	}
 }
