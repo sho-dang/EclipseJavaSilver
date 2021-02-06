@@ -75,6 +75,45 @@ public class Main {
 				List<String> li  =new ArrayList<String>(Arrays.asList(new String[] {"A","B","C"} ));
 				System.out.println(li.get(0));
 				li.forEach(System.out::println);
+
+		System.out.println(title.replace("a","12-**"));
+					/*
+					 * 使用クラス詳細
+					 *
+					 * Sample クラス
+					 * 		フィールド "taro"
+					 * 		helloメソッド nameを使う
+					 *
+					 * SubSample クラス （Sampleクラスを継承）
+					 * 		フィールド "jiro"
+					 * 		helloメソッド nameメソッドを使う
+					 */
+
+				//スーパークラス型へ同じクラスのインスタンスを生成
+				Sample sample = new Sample();
+				System.out.println(sample.name);//taro
+				sample.hello();//hello taro
+
+				//スーパークラス型へサブクラス型のインスタンスを作成(アップキャスト)
+				Sample sample2 = new SubSample();
+				System.out.println(sample2.name);//taro
+				sample2.hello();//hello jiro
+
+				//サブクラス型へ同じクラスのインスタンスを作成
+				SubSample sub = new SubSample();
+				System.out.println(sub.name);//jiro
+				sub.hello();//hello jiro
+
+				/* サブクラスの型へスーパークラス型のインスタンスを作成はできない
+				SubSample sub2 = new Sample();
+				System.out.println(sub.name);//jiro
+				sub.hello();//hello jiro
+				*/
+
+				//ダウンキャスト コンパイルエラーは出ないが実行時に例外が発生する
+				//SubSample sub3 =(SubSample) new Sample();
+				//System.out.println(sub3.name);
+				//sub3.hello();
 	}
 	void sample() {
 

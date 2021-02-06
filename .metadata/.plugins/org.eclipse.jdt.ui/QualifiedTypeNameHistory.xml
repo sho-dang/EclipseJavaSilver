@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sun.beans.introspect.PropertyInfo.Name"/>
-    <fullyQualifiedTypeName name="Child"/>
     <fullyQualifiedTypeName name="InterfaceB"/>
     <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
     <fullyQualifiedTypeName name="InterfaceA"/>
@@ -49,7 +47,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="compile12.Main.Inner"/>
     <fullyQualifiedTypeName name="compile12.Main"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="compile12.Sample"/>
+    <fullyQualifiedTypeName name="compile12.SubSample"/>
 </qualifiedTypeNameHistroy>
