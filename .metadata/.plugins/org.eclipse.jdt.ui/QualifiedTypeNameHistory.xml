@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="InterfaceB"/>
     <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
     <fullyQualifiedTypeName name="InterfaceA"/>
     <fullyQualifiedTypeName name="InterfaceC"/>
@@ -14,7 +13,6 @@
     <fullyQualifiedTypeName name="Service"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="Sample"/>
     <fullyQualifiedTypeName name="SampleComparator"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="compile12.Sample"/>
     <fullyQualifiedTypeName name="compile12.SubSample"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="compile12.Main.Sample2"/>
 </qualifiedTypeNameHistroy>

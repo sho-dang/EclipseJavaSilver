@@ -58,6 +58,12 @@ public class Main {
 					break;
 				}
 
+		System.out.println(title.replace("a","12-49"));
+				SampleInt sam = new SampleInt();
+				sam.setAll(10);
+				System.out.println(sam);
+
+
 		System.out.println(title.replace("a","12-53"));
 				/*
 				 * float型は小数点第一位を表示させる。
@@ -67,8 +73,14 @@ public class Main {
 				 * 例えば、int型の値を引数に入れた場合は小数点が切り捨てられる
 				 * float型で値を入れたい場合は、float型でキャストして計算しないといけない
 				 */
-				float fl = Math.round((float)5/2*100) /(float)100;
-				System.out.println(fl);
+				float f1 = (float)5/2;
+				float f2 = (float)5/2*100;
+				float f3 = (float)5/2*100 /(float)100;
+				float f4 = Math.round((float)5/2*100) /(float)100;
+				System.out.println(f1);
+				System.out.println(f2);
+				System.out.println(f3);
+				System.out.println(f4);
 
 
 		System.out.println(title.replace("a","12-**"));
@@ -131,3 +143,33 @@ public class Main {
 		}
 	}
 }
+
+
+class SampleInt{
+	int a ;
+	int b ;
+	int c ;
+	int d ;
+
+	void setA(int a) {
+		a= a;
+	}
+	void setB() {
+		this.b = b;
+	}
+	int setC() {
+		return c;
+	}
+	int setD(int num) {
+		d = num;
+		return d;
+	}
+	void setAll(int x) {
+		a = b = this.c = setD(x);
+	}
+	@Override
+	public String toString() {
+		return "SampleInt [a=" + a +",b="+ b +",c="+ c + ",d="+d +"]";
+	}
+}
+
