@@ -82,6 +82,36 @@ public class Main {
 				System.out.println(f3);
 				System.out.println(f4);
 
+		System.out.println(title.replace("a","12-60"));
+				short s1 = 10;
+				Integer s2  = 20;
+				Long s3 = (long) s1 + s2;
+				//String s4 = (String) (s3 + s2);
+				//System.out.println(s4);
+
+		System.out.println(title.replace("a","12-80"));
+				/*
+				 * 二次元配列の初期化 ＝ オブジェクト
+				 * 1次元配列 = オブジェクト
+				 * 配列の要素 = Stirng型
+				 *
+				 * 下記の状態
+				 * 2次元配列の初期化では1次元配列のメモリ番地を作成
+				 * 1次元配列の初期化ではString配列の要素のメモリ番地を作成
+				 * 初期化時は全てnullである
+				 *
+				 */
+
+				String[][] array = new String[2][];
+				array[0] = new String[2];
+				array[1] = new String[5];
+				int i = 97;
+				for(int a = 0; a < array.length;a++) {
+					for(int b = 0;b < array.length;b++) {
+						array[a][b] = "" + i;
+						i++;
+					}
+				}
 
 		System.out.println(title.replace("a","12-**"));
 				List<String> li  =new ArrayList<String>(Arrays.asList(new String[] {"A","B","C"} ));
