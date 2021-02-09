@@ -8,6 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		String title = "------  a  ------";
 
+
 		//A
 		/*
 		 *throwしているIOExceptionをcatchしていない
@@ -48,6 +49,16 @@ public class Main {
 		Sample sample = new Sample();
 		System.out.println(sample.toString());
 
+
+		System.out.println(title.replace("a", "13-5"));
+				/*
+				 *
+				 */
+				Sample5 sample5 = new Sample5();
+
+				System.out.println(sample5.value5);
+				System.out.println(sample5.num5);
+
 		System.out.println(title.replace("a", "13-20"));
 				/*
 				 * 配列を表示する時、呼び出した値がnullの場合、そのままnullが表示される
@@ -62,6 +73,17 @@ public class Main {
 				System.out.print(str);
 				}
 				System.out.println(array[0]);
+
+
+		System.out.println(title.replace("a", "13-29"));
+
+			final int numss;
+			//System.out.println(numss);//初期化していないと値を使用できない
+			numss = 3;
+			//numss = 6; finalのため1度目の代入の後は変更できない
+			System.out.println(numss);
+
+
 	}
 	private static void test(int num)throws IOException,IndexOutOfBoundsException{
 		if(num < 10) {
@@ -73,4 +95,8 @@ public class Main {
 
 
 
+}
+class Sample5{
+	String value5 ;
+	int num5;
 }
