@@ -2,6 +2,9 @@ package compile13;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
@@ -83,7 +86,24 @@ public class Main {
 			//numss = 6; finalのため1度目の代入の後は変更できない
 			System.out.println(numss);
 
+		System.out.println(title.replace("a", "13-31"));
+			/*
+			 * Mapについて
+			 *
+			 */
+			Map<String,String> maps = new HashMap<>();
+			maps.put("A","こんにちは");
+			maps.put("B","おはようございます");
+			maps.put("C","こんばんは");
 
+			SampleB31 sa  = new SampleB31();
+			sa.set(maps);
+			System.out.println(sa.getC());
+			System.out.println(maps.get("A"));
+			System.out.println(maps.get("B"));
+			System.out.println(maps.get("C"));
+			System.out.println(maps.values());
+			System.out.println(maps.keySet());
 	}
 	private static void test(int num)throws IOException,IndexOutOfBoundsException{
 		if(num < 10) {
@@ -99,4 +119,18 @@ public class Main {
 class Sample5{
 	String value5 ;
 	int num5;
+}
+class Sample31{
+	private Collection collection;
+	public void set(Collection collection) {
+		this.collection = collection;
+	}
+	public Collection getC() {
+		return this.collection;
+	}
+}
+class SampleB31 extends Sample31{
+	public void set(Map<String,String> map) {
+		set(map.values());
+	}
 }

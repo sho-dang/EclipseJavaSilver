@@ -12,6 +12,9 @@ public class Main {
 
 		FinalInt fi2 = new FinalInt(10);
 		System.out.println(fi2.number1);
+
+		FinalInt fi3 = new FinalInt(10,20);
+		System.out.println(fi3.number1);
 	}
 
 }

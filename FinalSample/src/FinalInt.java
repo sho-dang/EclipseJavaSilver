@@ -8,4 +8,7 @@ public class FinalInt {
 	public FinalInt(int num) {
 		number1 = num;
 	}
+	public FinalInt(int s,int f) {
+		this(s*f);
+	}
 }
