@@ -1,14 +1,18 @@
 package compile13;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		String title = "------  a  ------";
 
 
@@ -104,7 +108,35 @@ public class Main {
 			System.out.println(maps.get("C"));
 			System.out.println(maps.values());
 			System.out.println(maps.keySet());
-	}
+
+		System.out.println(title.replace("a", "13-34"));
+				int[][] arrayInt = new int[2][4];
+					//2次元配列の要素の初期化時点ではデフォルト値で表示できる
+					System.out.println(arrayInt[1][2]);
+				//要素をそのまま入れる場合には[][]で要素を代入
+				arrayInt[0][0] = 1 ;
+				arrayInt[1][0] = 2 ;
+				//1次元配列を初期化する場合には下のように記述(もともと持っていた要素を置き換える)
+				//もともと2つの配列に4つずつ要素を確保していたが、
+				//初期化をすることで要素数が変更される
+				arrayInt[0]=new int[]{1,2,3,4,5};
+				arrayInt[1]=new int[]{1,2};
+
+				for(int[] a : arrayInt) {
+					for(int b : a) {
+						System.out.println(b);
+					}
+				}
+				//2次元配列の中身の1次元配列の要素を初期化している場合は、
+				//例：2次元配列で初期化した時の個数
+				//System.out.println(arrayInt[1][2]);
+
+		System.out.println(title.replace("a", "13-42"));
+				//try-with-resource
+				Sample42 sm = new Sample42();
+				sm.copy("","");
+}
+
 	private static void test(int num)throws IOException,IndexOutOfBoundsException{
 		if(num < 10) {
 			throw new FileNotFoundException();
@@ -132,5 +164,25 @@ class Sample31{
 class SampleB31 extends Sample31{
 	public void set(Map<String,String> map) {
 		set(map.values());
+	}
+}
+class Sample42{
+	public void copy(String src,String dest){
+
+
+		try(InputStream inputStream =new FileInputStream(src);
+			OutputStream outputStream = new FileOutputStream(dest)){
+
+			byte[] buf = new byte[100];
+			int n;
+			while ((n = inputStream.read(buf)) >= 0) {
+				outputStream.write(buf,0,n);
+			}
+			//throw new IOException();
+		}catch (IOException e){
+			System.out.println("catch完了");
+		}finally {
+			System.out.println("finally");
+		}
 	}
 }
