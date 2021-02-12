@@ -18,7 +18,8 @@ public class Main {
 				 *	クラスメソッドにおけるクラスフィールドの呼び出しは、変数名のみで良い。
 				 *	一方、インスタンス変数を呼び出す場合は「this.変数名」を使用する
 				 */
-				int num = Main.num;
+				//int num = num;
+				//int num = Main.num;
 				System.out.println(num);
 
 		System.out.println(title.replace("a","12-13"));
@@ -58,6 +59,10 @@ public class Main {
 					break;
 				}
 
+		System.out.println(title.replace("a","12-38"));
+				List<Character> list =List.of();
+				//list.add('a');
+
 		System.out.println(title.replace("a","12-49"));
 				SampleInt sam = new SampleInt();
 				sam.setAll(10);
@@ -88,6 +93,21 @@ public class Main {
 				Long s3 = (long) s1 + s2;
 				//String s4 = (String) (s3 + s2);
 				//System.out.println(s4);
+
+		System.out.println(title.replace("a","12-63"));
+				int x ;//初期化はしていない
+				int y = 3;
+				if(y>2) {
+					//ifのスコープ内で初期化をしているだけなので、ローカル変数には反映されない
+					x = ++y;
+					y = x + 5 ;
+					System.out.println(x);//スコープ内では初期化しているため、変数を使用可能
+				}else {
+					y++;
+				}
+				//スコープから外れたのでローカル変数の初期化はされていない状態に戻る
+				//そのため、コンパイルエラーとなる
+				//System.out.println(x + "" +y);
 
 		System.out.println(title.replace("a","12-80"));
 				/*
