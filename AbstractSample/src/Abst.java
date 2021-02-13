@@ -28,8 +28,11 @@ public abstract class Abst {
 	//private abstract void Abst4();
 
 	//実装済みメソッドにはアクセス修飾子の制限は無い
-	void method1(){};
-	public void method2() {}
+	void method1(){
+		int num;
+		//System.out.println(num);
+	};
+	public void method2() {System.out.println(str1);}
 	protected void method3() {}
 	private void method4() {}
 

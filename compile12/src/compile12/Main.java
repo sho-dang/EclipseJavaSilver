@@ -8,9 +8,9 @@ import java.util.function.Supplier;
 public class Main {
 	static int num = 23;
 	static String str;
+	int not ;
 	public static void main(String[] args) {
 		String title = "------   a   ------";
-
 		System.out.println(title.replace("a","12-5"));
 				/*
 				 *  クラスフィールド変数はローカル変数共に同じ変数を定義することは可能
@@ -47,9 +47,22 @@ public class Main {
 				Inner inner = main.new Inner();
 
 		System.out.println(title.replace("a","12-31"));
+				//上部にインスタンス変数を「not」を定義
+				/*
+				 * staticなメソッドはインスタンスなフィールドまたはメソッドの参照を行うことができない
+				 * コンパイルエラーとなる
+				 * 使用できるのはstaticのついたフィールドとメソッドのみ
+				 */
+				//not++;
+
+		System.out.println(title.replace("a","12-31"));
 				var alpabet = new ArrayList<>(Arrays.asList(new String[] {"A","B","C","D","E"}));
 				alpabet.sort((var a,var b) -> -a.compareTo(b));
 				alpabet.forEach(System.out::println);
+
+
+		System.out.println(title.replace("a","12-33"));
+				Sample33 s33  =new Sample33();
 
 		System.out.println(title.replace("a","12-34"));
 				char c = 'C';
@@ -220,6 +233,23 @@ class SampleInt{
 	@Override
 	public String toString() {
 		return "SampleInt [a=" + a +",b="+ b +",c="+ c + ",d="+d +"]";
+	}
+}
+
+class Sample33{
+	public void test(Object[] val) {
+		System.out.println("A");
+	}
+	public void test(long[] val) {
+		System.out.println("B");
+	}
+	public void test(Object val) {
+		System.out.println("C");
+	}
+
+	public Sample33(){
+		test(new int[3][]);
+
 	}
 }
 
