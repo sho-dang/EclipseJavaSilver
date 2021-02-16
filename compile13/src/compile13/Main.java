@@ -135,6 +135,23 @@ public class Main {
 				//try-with-resource
 				Sample42 sm = new Sample42();
 				sm.copy("","");
+
+		System.out.println(title.replace("a", "13-74"));
+				char[][] array1 = {{'a','b'},{'c','d'}};
+				char[][] array2 = array1.clone();
+				char[] array3 = array1[1].clone();
+
+				System.out.println(array1[1]==array3);
+				//System.out.println(array1[1]==array3[1]);
+				System.out.println(array1[1]==array2[1]);
+				System.out.println(array1.equals(array2));
+
+		System.out.println(title.replace("a", "13-76"));
+				String upName = "abcde";
+				String kanaNum = "あいうえお01234";
+
+				System.out.println(upName.toUpperCase());
+				System.out.println(kanaNum.toUpperCase());
 }
 
 	private static void test(int num)throws IOException,IndexOutOfBoundsException{
